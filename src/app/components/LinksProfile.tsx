@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 import userAvastar from "@/app/assets/images/avatar-jessica.jpeg"
 import { StaticImageData } from "next/image";
 
@@ -38,7 +39,7 @@ export default function LinksProfile() {
             {
                 socialLinks.map((link, index) => (
                     <div key={index} className="bg-profile-grey-700 w-full flex justify-center items-center h-12 text-sm font-bold rounded-custom-lg cursor-pointer active:bg-profile-green active:text-profile-grey-700">
-                        {link}
+                        <Link href="#">{link}</Link>
                     </div>
                 ))
             }
