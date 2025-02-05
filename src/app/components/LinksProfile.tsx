@@ -35,12 +35,9 @@ export default function LinksProfile() {
             </section>
 
             <p className="text-sm text-profile-white py-2">&quot;{userProfile.description}&quot;</p>
-
             {
                 socialLinks.map((link, index) => (
-                    <div key={index} className="bg-profile-grey-700 w-full flex justify-center items-center h-12 text-sm font-bold rounded-custom-lg cursor-pointer active:bg-profile-green active:text-profile-grey-700">
-                        <Link href="#" className="text-profile-white">{link}</Link>
-                    </div>
+                    <Link key={index} className="bg-profile-grey-700 w-full flex justify-center items-center h-12 text-sm font-bold rounded-custom-lg text-profile-white cursor-pointer hover:bg-profile-green hover:text-profile-grey-700 focus:bg-profile-green focus:text-profile-grey-700 " href="#">{link}</Link>
                 ))
             }
         </div>
