@@ -27,8 +27,8 @@ const socialLinks: string[] = [
 
 export default function LinksProfile() {
     return (
-        <div className="bg-profile-grey-800 flex flex-col justify-center items-center p-8 gap-4 w-32 mobile:w-[375px] desktop:w-[375px] rounded-custom-lg">
-            <Image src={userProfile.avatar} alt={userProfile.name} className="w-24 h-24 rounded-full" width={24} height={24} />
+        <div className="bg-profile-grey-800 flex flex-col justify-center items-center p-10 gap-4 w-32 mobile:w-[375px] desktop:w-[375px] rounded-custom-lg">
+            <Image src={userProfile.avatar} alt={userProfile.name} className="w-20 h-20 rounded-full" width={20} height={20} />
             <section className="space-y-2 text-center">
                 <h1 className="text-2xl font-bold text-profile-white">{userProfile.name}</h1>
                 <address className="text-sm text-profile-green font-bold not-italic">{userProfile.location}</address>
